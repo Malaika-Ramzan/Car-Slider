@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELOCE - Luxury Sports Cars</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP NAV - SAB KAAM KAREGA -->
+<header>
+  <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">VELOCE<span>.</span></div>
+  <nav id="nav">
+    <a href="#home" class="active">Home</a>
+    <a href="#cars">Cars</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="top-btn">Book Test Drive</a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<!-- HERO - BARI PHOTO WALA SLIDER -->
+<section class="hero" id="home">
+  <img class="hero-img" id="heroImg" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80" alt="Sports Car">
+  <div class="hero-shade"></div>
+
+  <div class="hero-content">
+    <span class="badge" id="heroBadge">● SUPER SPORTS</span>
+    <h1 id="heroTitle">PORSCHE<br><span>911 GT3</span></h1>
+    <p id="heroDesc">The car that was built for the race track, but made for the road. Feel the power in every second.</p>
+
+    <div class="specs">
+      <div><b id="spec1">2.9s</b><small>0-100 km/h</small></div>
+      <div><b id="spec2">640 HP</b><small>Power</small></div>
+      <div><b id="spec3">325</b><small>Top Speed</small></div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#cars" class="btn-white">EXPLORE CARS →</a>
+      <a href="#contact" class="btn-ghost">BOOK TEST DRIVE</a>
+    </div>
+  </div>
+
+  <!-- SLIDER CONTROLS -->
+  <div class="hero-controls">
+    <div class="hero-dots">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+    </div>
+    <div class="hero-arrows">
+      <button id="prevBtn">←</button>
+      <span id="slideNum">01 / 03</span>
+      <button id="nextBtn">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- CARS - 3 PROFESSIONAL CARDS -->
+<section class="cars-section" id="cars">
+  <div class="sec-head">
+    <div>
+      <p class="sec-small">OUR COLLECTION</p>
+      <h2>Choose Your <span>Beast</span></h2>
+    </div>
+    <p class="sec-right">Teenon cars me se kisi par bhi click karo, upar wali bari photo badal jayegi.</p>
+  </div>
+
+  <div class="cars-grid">
+    <article class="car-card active" data-index="0">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Porsche"><span class="price">$ 185,000</span></div>
+      <div class="card-body">
+        <p class="tag">SUPER SPORTS</p>
+        <h3>Porsche 911 GT3</h3>
+        <p class="card-desc">2.9s • 640 HP • 325 km/h</p>
+        <button>VIEW CAR →</button>
+      </div>
+    </article>
+
+    <article class="car-card" data-index="1">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80" alt="Mustang"><span class="price">$ 68,000</span></div>
+      <div class="card-body">
+        <p class="tag red">CLASSIC MUSCLE</p>
+        <h3>Ford Mustang GT</h3>
+        <p class="card-desc">4.5s • 450 HP • 250 km/h</p>
+        <button>VIEW CAR →</button>
+      </div>
+    </article>
+
+    <article class="car-card" data-index="2">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80" alt="BMW M4"><span class="price">$ 210,000</span></div>
+      <div class="card-body">
+        <p class="tag blue">HYPER CAR</p>
+        <h3>BMW M4 Competition</h3>
+        <p class="card-desc">2.4s • 510 HP • 290 km/h</p>
+        <button>VIEW CAR →</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1000&q=80" alt="Classic Car">
+    <div class="about-badge"><b>10+</b><span>Years Experience</span></div>
+  </div>
+  <div class="about-text">
+    <p class="sec-small">ABOUT VELOCE</p>
+    <h2>We Don't Sell Cars.<br>We Sell <span>Emotions.</span></h2>
+    <p>VELOCE Pakistan ka sab se premium car showroom hai. Hum sirf wo cars rakhte hain jo dekh kar dil dharak jaye.</p>
+    <ul>
+      <li>✅ 100% Original & Verified Cars</li>
+      <li>✅ Free Test Drive - Ghar par bhi</li>
+      <li>✅ Easy Installments Available</li>
+    </ul>
+    <a href="#contact" class="btn-white">VISIT SHOWROOM →</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Book Your <span>Test Drive</span></h2>
+  <p>Apna naam aur number likhein, hum aap ko call karenge.</p>
+  <form id="contactForm">
+    <input type="text" placeholder="Apna Naam *" required>
+    <input type="tel" placeholder="Phone Number *" required>
+    <select>
+      <option>Porsche 911 GT3</option>
+      <option>Ford Mustang GT</option>
+      <option>BMW M4 Competition</option>
+    </select>
+    <button type="submit">SEND REQUEST →</button>
+    <p id="successMsg">✅ Shukriya! Aap ki request mil gayi. Hum jald call karenge.</p>
+  </form>
+</section>
+
+<footer>Made with ❤️ by Malaika • VELOCE • HTML • CSS • JavaScript</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
